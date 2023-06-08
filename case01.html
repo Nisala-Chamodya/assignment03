@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Case 01</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container > section {
+        width: 50vw;
+        height: 50vh;
+        position: absolute;
+      }
+      .green-corner {
+        width: 100px;
+        height: 100px;
+
+        background-color: white;
+        border-bottom-right-radius: 100px;
+      }
+      .red-corner {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        background-color: rgb(255, 255, 255);
+        border-bottom-left-radius: 100px;
+      }
+      .yellow-corner {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+
+        background-color: white;
+        border-top-right-radius: 100px;
+      }
+      .deeppink-corner {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+        background-color: white;
+        border-top-left-radius: 100px;
+      }
+      .green {
+        background-color: green;
+        left: 0;
+        position: relative;
+      }
+      .green-circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: white;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .red {
+        background-color: rgb(255, 0, 0);
+        right: 0;
+      }
+      .red-circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: white;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .yellow {
+        background-color: rgb(255, 238, 0);
+        left: 0;
+        bottom: 0;
+      }
+      .yellow-circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: white;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .deeppink {
+        background-color: rgb(128, 0, 85);
+        right: 0;
+        bottom: 0;
+      }
+      .deeppink-circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background-color: white;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      body > div {
+        border: 2px solid rgb(255, 255, 255);
+        width: 100px;
+        height: 100px;
+        z-index: 10;
+        position: relative;
+      }
+      .green-box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .red-box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .yellow-box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .deeppink-box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .center-box {
+        width: 100px;
+        height: 100px;
+        background-color: white;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+      .tophalfcircle {
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px;
+      }
+      .bottomhalfcircle {
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        border-top-left-radius: 100px;
+        border-top-right-radius: 100px;
+      }
+      .center-circle {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 100px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="container">
+      <section class="green">
+        <div class="green-corner"></div>
+        <div class="green-circle">
+          <div class="green-box"></div>
+        </div>
+      </section>
+      <section class="red">
+        <div class="red-corner"></div>
+        <div class="red-circle">
+          <div class="red-box"></div>
+        </div>
+      </section>
+      <section class="yellow">
+        <div class="yellow-corner"></div>
+        <div class="yellow-circle">
+          <div class="yellow-box"></div>
+        </div>
+      </section>
+      <section class="deeppink">
+        <div class="deeppink-corner"></div>
+        <div class="deeppink-circle">
+          <div class="deeppink-box"></div>
+        </div>
+      </section>
+    </section>
+
+    <div class="center-box">
+      <div class="center-circle"></div>
+    </div>
+    <div class="tophalfcircle"></div>
+    <div class="tophalfcircle"></div>
+    <div class="bottomhalfcircle"></div>
+  </body>
+</html>
+<!--
+   <div class="green-corner"></div>
+      <div class="red-corner"></div>
+      <div class="yellow-corner"></div>
+      <div class="deeppink-corner"></div>
+-->
